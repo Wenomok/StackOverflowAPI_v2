@@ -8,6 +8,12 @@
 
 import UIKit
 
-class Constant: NSObject {
-
+struct Constant {
+    struct STACK_OVERFLOW_API {
+        static let baseURL = "https://api.stackexchange.com/2.2/questions"
+    }
+    
+    struct TABLE_VIEW_CELL_IDS {
+        static let questionCell = "question_cell"
+    }
 }

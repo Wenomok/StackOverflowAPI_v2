@@ -3,27 +3,55 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8080F2E82350942BFCC06C53 /* Pods_stackoverflow_api_v2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6888AA63D15114F95AF8C98E /* Pods_stackoverflow_api_v2.framework */; };
 		FAC5D6ED24FA794E0028901B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5D6EC24FA794E0028901B /* AppDelegate.swift */; };
 		FAC5D6EF24FA794E0028901B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5D6EE24FA794E0028901B /* SceneDelegate.swift */; };
-		FAC5D6F124FA794E0028901B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5D6F024FA794E0028901B /* ViewController.swift */; };
+		FAC5D6F124FA794E0028901B /* SOQuestionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5D6F024FA794E0028901B /* SOQuestionsTableViewController.swift */; };
 		FAC5D6F424FA794E0028901B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC5D6F224FA794E0028901B /* Main.storyboard */; };
 		FAC5D6F624FA794F0028901B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC5D6F524FA794F0028901B /* Assets.xcassets */; };
 		FAC5D6F924FA794F0028901B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC5D6F724FA794F0028901B /* LaunchScreen.storyboard */; };
+		FAC5D70324FA86F00028901B /* SONetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5D70224FA86EF0028901B /* SONetworkManager.swift */; };
+		FAC5D70724FA870E0028901B /* SOResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5D70624FA870E0028901B /* SOResponses.swift */; };
+		FAC5D70D24FA87BF0028901B /* SOQuestionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5D70C24FA87BF0028901B /* SOQuestionsRouter.swift */; };
+		FAC5D70F24FA87CB0028901B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5D70E24FA87CB0028901B /* Constant.swift */; };
+		FAC5D71324FCE3A40028901B /* SOModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5D71224FCE3A40028901B /* SOModels.swift */; };
+		FAC5D71624FCE5E10028901B /* SOQuestionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5D71524FCE5E10028901B /* SOQuestionParser.swift */; };
+		FAC5D71924FCF3BE0028901B /* Data+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5D71824FCF3BE0028901B /* Data+JSON.swift */; };
+		FAC5D71B24FCFBE00028901B /* VIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5D71A24FCFBE00028901B /* VIViewController.swift */; };
+		FAC5D71D24FCFC8F0028901B /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5D71C24FCFC8F0028901B /* UIView+Constraints.swift */; };
+		FAC5D72324FCFDF10028901B /* SOQuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5D72224FCFDF10028901B /* SOQuestionTableViewCell.swift */; };
+		FAC5D72524FCFFA40028901B /* Array+RT.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5D72424FCFFA40028901B /* Array+RT.swift */; };
+		FAC5D72824FD08D40028901B /* SOAnwersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC5D72724FD08D40028901B /* SOAnwersTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6888AA63D15114F95AF8C98E /* Pods_stackoverflow_api_v2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stackoverflow_api_v2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C27EBD9851D3CBFFF56C7790 /* Pods-stackoverflow_api_v2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stackoverflow_api_v2.release.xcconfig"; path = "Target Support Files/Pods-stackoverflow_api_v2/Pods-stackoverflow_api_v2.release.xcconfig"; sourceTree = "<group>"; };
+		E757B147965AC7D4345B3A73 /* Pods-stackoverflow_api_v2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stackoverflow_api_v2.debug.xcconfig"; path = "Target Support Files/Pods-stackoverflow_api_v2/Pods-stackoverflow_api_v2.debug.xcconfig"; sourceTree = "<group>"; };
 		FAC5D6E924FA794E0028901B /* stackoverflow_api_v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stackoverflow_api_v2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC5D6EC24FA794E0028901B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC5D6EE24FA794E0028901B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAC5D6F024FA794E0028901B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAC5D6F024FA794E0028901B /* SOQuestionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOQuestionsTableViewController.swift; sourceTree = "<group>"; };
 		FAC5D6F324FA794E0028901B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAC5D6F524FA794F0028901B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAC5D6F824FA794F0028901B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAC5D6FA24FA794F0028901B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC5D70224FA86EF0028901B /* SONetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SONetworkManager.swift; sourceTree = "<group>"; };
+		FAC5D70624FA870E0028901B /* SOResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOResponses.swift; sourceTree = "<group>"; };
+		FAC5D70C24FA87BF0028901B /* SOQuestionsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOQuestionsRouter.swift; sourceTree = "<group>"; };
+		FAC5D70E24FA87CB0028901B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		FAC5D71224FCE3A40028901B /* SOModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOModels.swift; sourceTree = "<group>"; };
+		FAC5D71524FCE5E10028901B /* SOQuestionParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOQuestionParser.swift; sourceTree = "<group>"; };
+		FAC5D71824FCF3BE0028901B /* Data+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+JSON.swift"; sourceTree = "<group>"; };
+		FAC5D71A24FCFBE00028901B /* VIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIViewController.swift; sourceTree = "<group>"; };
+		FAC5D71C24FCFC8F0028901B /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		FAC5D72224FCFDF10028901B /* SOQuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOQuestionTableViewCell.swift; sourceTree = "<group>"; };
+		FAC5D72424FCFFA40028901B /* Array+RT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+RT.swift"; sourceTree = "<group>"; };
+		FAC5D72724FD08D40028901B /* SOAnwersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOAnwersTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +59,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8080F2E82350942BFCC06C53 /* Pods_stackoverflow_api_v2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58072EC8C32C7EFAA12E95BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E757B147965AC7D4345B3A73 /* Pods-stackoverflow_api_v2.debug.xcconfig */,
+				C27EBD9851D3CBFFF56C7790 /* Pods-stackoverflow_api_v2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8C6CAD3A6F09CB6C65EB4871 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6888AA63D15114F95AF8C98E /* Pods_stackoverflow_api_v2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FAC5D6E024FA794D0028901B = {
 			isa = PBXGroup;
 			children = (
 				FAC5D6EB24FA794E0028901B /* stackoverflow_api_v2 */,
 				FAC5D6EA24FA794E0028901B /* Products */,
+				58072EC8C32C7EFAA12E95BA /* Pods */,
+				8C6CAD3A6F09CB6C65EB4871 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +104,147 @@
 		FAC5D6EB24FA794E0028901B /* stackoverflow_api_v2 */ = {
 			isa = PBXGroup;
 			children = (
-				FAC5D6EC24FA794E0028901B /* AppDelegate.swift */,
-				FAC5D6EE24FA794E0028901B /* SceneDelegate.swift */,
-				FAC5D6F024FA794E0028901B /* ViewController.swift */,
-				FAC5D6F224FA794E0028901B /* Main.storyboard */,
-				FAC5D6F524FA794F0028901B /* Assets.xcassets */,
-				FAC5D6F724FA794F0028901B /* LaunchScreen.storyboard */,
-				FAC5D6FA24FA794F0028901B /* Info.plist */,
+				FAC5D70A24FA876F0028901B /* App */,
+				FAC5D70024FA86C90028901B /* Model */,
+				FAC5D70924FA87660028901B /* View */,
+				FAC5D70824FA87470028901B /* ViewControllers */,
+				FAC5D70B24FA877E0028901B /* Resources */,
 			);
 			path = stackoverflow_api_v2;
+			sourceTree = "<group>";
+		};
+		FAC5D70024FA86C90028901B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAC5D71124FCE3100028901B /* Objects */,
+				FAC5D70124FA86CF0028901B /* NetworkManager */,
+				FAC5D71724FCF3AD0028901B /* Extension */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAC5D70124FA86CF0028901B /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				FAC5D71424FCE5C70028901B /* Parsers */,
+				FAC5D71024FA8ACD0028901B /* SOQuestionsAPIHelpers */,
+				FAC5D70224FA86EF0028901B /* SONetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		FAC5D70824FA87470028901B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FAC5D72624FD08A20028901B /* Model */,
+				FAC5D6F024FA794E0028901B /* SOQuestionsTableViewController.swift */,
+				FAC5D72724FD08D40028901B /* SOAnwersTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FAC5D70924FA87660028901B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAC5D71E24FCFDBD0028901B /* TableViewCells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAC5D70A24FA876F0028901B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FAC5D70E24FA87CB0028901B /* Constant.swift */,
+				FAC5D6EC24FA794E0028901B /* AppDelegate.swift */,
+				FAC5D6EE24FA794E0028901B /* SceneDelegate.swift */,
+				FAC5D6F224FA794E0028901B /* Main.storyboard */,
+				FAC5D6F724FA794F0028901B /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FAC5D70B24FA877E0028901B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAC5D6F524FA794F0028901B /* Assets.xcassets */,
+				FAC5D6FA24FA794F0028901B /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAC5D71024FA8ACD0028901B /* SOQuestionsAPIHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				FAC5D70624FA870E0028901B /* SOResponses.swift */,
+				FAC5D70C24FA87BF0028901B /* SOQuestionsRouter.swift */,
+			);
+			path = SOQuestionsAPIHelpers;
+			sourceTree = "<group>";
+		};
+		FAC5D71124FCE3100028901B /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				FAC5D71224FCE3A40028901B /* SOModels.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		FAC5D71424FCE5C70028901B /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				FAC5D71524FCE5E10028901B /* SOQuestionParser.swift */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		FAC5D71724FCF3AD0028901B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FAC5D72A24FD39140028901B /* AVFoundation */,
+				FAC5D72924FD390D0028901B /* UIKit */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FAC5D71E24FCFDBD0028901B /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				FAC5D71F24FCFDC30028901B /* QuestionsTable */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		FAC5D71F24FCFDC30028901B /* QuestionsTable */ = {
+			isa = PBXGroup;
+			children = (
+				FAC5D72224FCFDF10028901B /* SOQuestionTableViewCell.swift */,
+			);
+			path = QuestionsTable;
+			sourceTree = "<group>";
+		};
+		FAC5D72624FD08A20028901B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAC5D71A24FCFBE00028901B /* VIViewController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAC5D72924FD390D0028901B /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				FAC5D71C24FCFC8F0028901B /* UIView+Constraints.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		FAC5D72A24FD39140028901B /* AVFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				FAC5D72424FCFFA40028901B /* Array+RT.swift */,
+				FAC5D71824FCF3BE0028901B /* Data+JSON.swift */,
+			);
+			path = AVFoundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +254,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAC5D6FD24FA794F0028901B /* Build configuration list for PBXNativeTarget "stackoverflow_api_v2" */;
 			buildPhases = (
+				E7BB13E954D6EBBC9141EFA3 /* [CP] Check Pods Manifest.lock */,
 				FAC5D6E524FA794D0028901B /* Sources */,
 				FAC5D6E624FA794D0028901B /* Frameworks */,
 				FAC5D6E724FA794D0028901B /* Resources */,
+				EDCA516852562F922712EBA8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +315,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E7BB13E954D6EBBC9141EFA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-stackoverflow_api_v2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDCA516852562F922712EBA8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-stackoverflow_api_v2/Pods-stackoverflow_api_v2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-stackoverflow_api_v2/Pods-stackoverflow_api_v2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-stackoverflow_api_v2/Pods-stackoverflow_api_v2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FAC5D6E524FA794D0028901B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAC5D6F124FA794E0028901B /* ViewController.swift in Sources */,
+				FAC5D71B24FCFBE00028901B /* VIViewController.swift in Sources */,
+				FAC5D72824FD08D40028901B /* SOAnwersTableViewController.swift in Sources */,
+				FAC5D72324FCFDF10028901B /* SOQuestionTableViewCell.swift in Sources */,
+				FAC5D70F24FA87CB0028901B /* Constant.swift in Sources */,
+				FAC5D71924FCF3BE0028901B /* Data+JSON.swift in Sources */,
+				FAC5D71D24FCFC8F0028901B /* UIView+Constraints.swift in Sources */,
+				FAC5D71624FCE5E10028901B /* SOQuestionParser.swift in Sources */,
+				FAC5D70D24FA87BF0028901B /* SOQuestionsRouter.swift in Sources */,
+				FAC5D70724FA870E0028901B /* SOResponses.swift in Sources */,
+				FAC5D70324FA86F00028901B /* SONetworkManager.swift in Sources */,
+				FAC5D6F124FA794E0028901B /* SOQuestionsTableViewController.swift in Sources */,
+				FAC5D71324FCE3A40028901B /* SOModels.swift in Sources */,
+				FAC5D72524FCFFA40028901B /* Array+RT.swift in Sources */,
 				FAC5D6ED24FA794E0028901B /* AppDelegate.swift in Sources */,
 				FAC5D6EF24FA794E0028901B /* SceneDelegate.swift in Sources */,
 			);
@@ -282,11 +518,13 @@
 		};
 		FAC5D6FE24FA794F0028901B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E757B147965AC7D4345B3A73 /* Pods-stackoverflow_api_v2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZK943LB6V2;
-				INFOPLIST_FILE = stackoverflow_api_v2/Info.plist;
+				INFOPLIST_FILE = stackoverflow_api_v2/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,17 +532,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "vivshin.stackoverflow-api-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		FAC5D6FF24FA794F0028901B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C27EBD9851D3CBFFF56C7790 /* Pods-stackoverflow_api_v2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZK943LB6V2;
-				INFOPLIST_FILE = stackoverflow_api_v2/Info.plist;
+				INFOPLIST_FILE = stackoverflow_api_v2/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +552,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "vivshin.stackoverflow-api-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -9,16 +9,24 @@
 import UIKit
 
 class SOQuestionTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+        
     }
 
+    func configure(question: SOQuestion) {
+//        OperationQueue.main.addOperation {
+            self.authorLabel.text = question.author
+            self.titleLabel.text = question.title
+//        }
+    }
 }

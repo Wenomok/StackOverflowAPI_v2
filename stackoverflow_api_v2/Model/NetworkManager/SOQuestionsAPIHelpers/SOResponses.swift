@@ -8,3 +8,12 @@
 
 import UIKit
 
+enum DefaultResponse {
+    case success(data: Data)
+    case failure(error: Error)
+}
+
+enum QuestionByTagResponse {
+    case success(questions: [SOQuestion], hasMore: Bool)
+    case failure(error: Error)
+}

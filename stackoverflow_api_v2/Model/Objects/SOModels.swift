@@ -8,7 +8,19 @@
 
 import UIKit
 
-struct SOQuestion {
+struct SOObject {
+    let questionId: Int
+    
+    let body: String
+    
+    let author: String
+    
+    let lastEditDateTimeStamp: Double
+    let answerCount: Int
+    let score: Int
+}
+
+struct SOQuestion: SOObject {
     let id: Int
     
     let title: String
