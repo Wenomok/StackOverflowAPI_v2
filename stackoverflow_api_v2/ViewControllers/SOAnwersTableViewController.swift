@@ -14,6 +14,7 @@ enum AnswerQuestionTableType: Int {
 }
 
 class SOAnwersTableViewController: VIViewController {
+    @IBOutlet weak var answersTableView: UITableView!
     
     private var dataSource: [AnswerQuestionTableType: [Any]] = [:]
     
@@ -25,12 +26,17 @@ class SOAnwersTableViewController: VIViewController {
         super.viewDidLoad()
 
         if let question = self.dataSource[AnswerQuestionTableType.question]?.first as? SOQuestion {
-            SONetworkManager.shared().getAnswers(forQuestionId: question.id) { (response) in
+            SONetworkManager.shared().getAnswers(forQuestionId: Int(question.id)) { (response) in
                 switch response {
                 case .success(let data):
-                    print()
+                    let answers = SOQuestionParser().parseSOAnswers(withData: data)
+                    self.dataSource[.answer] = answers
+                    
+                    OperationQueue.main.addOperation {
+                        self.answersTableView.reloadData()
+                    }
                 case .failure(let error):
-                    print()
+                    self.showOkAlert(withMessage: error.localizedDescription)
                 }
             }
         }
@@ -53,7 +59,19 @@ extension SOAnwersTableViewController: UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let tableType = AnswerQuestionTableType.init(rawValue: indexPath.section) {
-            
+            if tableType == .question, let question = self.dataSource[tableType]?.first as? SOQuestion {
+                let questionTableViewCell = tableView.dequeueReusableCell(withIdentifier: Constant.TABLE_VIEW_CELL_IDS.detailQuestionCell,
+                                                                          for: indexPath) as! SODetailQuestionTableViewCell
+                questionTableViewCell.configure(question: question)
+                
+                return questionTableViewCell
+            } else if tableType == .answer, let answer = self.dataSource[tableType]?[safeIndex: indexPath.row] as? SOAnswer {
+                let answerTableViewCell = tableView.dequeueReusableCell(withIdentifier: Constant.TABLE_VIEW_CELL_IDS.answerCell,
+                                                                        for: indexPath) as! SOAnswerTableViewCell
+                answerTableViewCell.configure(answer: answer)
+                
+                return answerTableViewCell
+            }
         }
         return UITableViewCell()
     }

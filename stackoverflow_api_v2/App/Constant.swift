@@ -14,6 +14,11 @@ struct Constant {
     }
     
     struct TABLE_VIEW_CELL_IDS {
+        // MARK: Question list
         static let questionCell = "question_cell"
+        
+        // MARK: Detail question
+        static let detailQuestionCell = "detail_question_cell"
+        static let answerCell = "answer_cell"
     }
 }

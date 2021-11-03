@@ -9,16 +9,22 @@
 import UIKit
 
 class SODetailQuestionTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var bodyQuestionLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+        
     }
 
+    func configure(question: SOQuestion) {
+        self.authorLabel.text = question.author
+        self.bodyQuestionLabel.attributedText = question.body.attributedHTMLString
+    }
 }

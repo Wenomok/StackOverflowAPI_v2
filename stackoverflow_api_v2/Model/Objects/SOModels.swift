@@ -8,27 +8,78 @@
 
 import UIKit
 
-struct SOObject {
-    let questionId: Int
+protocol CommonResponse: Decodable {
+    var hasMore: Bool { get }
+}
+
+struct AnswersResponse: CommonResponse {
+    var hasMore: Bool
+    var items: [SOAnswer]?
     
-    let body: String
+    enum CodingKeys: String, CodingKey {
+        case hasMore = "has_more"
+        case items = "items"
+    }
+}
+
+protocol SOObject: Decodable {
+//    var id: Int { get }
     
-    let author: String
+    var body: String { get }
     
-    let lastEditDateTimeStamp: Double
-    let answerCount: Int
-    let score: Int
+//    var author: String { get }
+    
+//    var lastEditDateTimeStamp: Double { get }
+    var score: Int { get }
 }
 
 struct SOQuestion: SOObject {
-    let id: Int
+    var id: Int
     
-    let title: String
-    let body: String
+    var title: String
+    var body: String
     
-    let author: String
+    var author: String
     
-    let lastEditDateTimeStamp: Double
-    let answerCount: Int
-    let score: Int
+    var lastEditDateTimeStamp: Double
+    
+    var score: Int
+    
+    let isAnswered: Bool
+    
+    var answerCount: Int
+}
+
+struct SOAnswer: Decodable {
+    var id: Int
+    
+    var author: SOOwner
+    
+    var body: String
+    
+    var lastEditDateTimeStamp: Double
+    
+    var score: Int
+    
+    let isAccepted: Bool
+    
+    enum CodingKeys: String, CodingKey {
+        case id = "answer_id"
+        case lastEditDateTimeStamp = "last_activity_date"
+        case isAccepted = "is_accepted"
+        case score, body
+        case author = "owner"
+    }
+}
+
+struct SOOwner: Decodable {
+    var profileImage: String
+    var userId: Int
+    var name: String
+    
+    enum CodingKeys: String, CodingKey {
+        case profileImage = "profile_image"
+        case userId = "user_id"
+        case name = "display_name"
+    }
 }

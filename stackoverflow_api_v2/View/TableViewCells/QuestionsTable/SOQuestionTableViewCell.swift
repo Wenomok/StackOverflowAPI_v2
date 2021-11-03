@@ -26,7 +26,7 @@ class SOQuestionTableViewCell: UITableViewCell {
     func configure(question: SOQuestion) {
 //        OperationQueue.main.addOperation {
             self.authorLabel.text = question.author
-            self.titleLabel.text = question.title
+        self.titleLabel.attributedText = question.title.attributedHTMLString
 //        }
     }
 }
